@@ -28,35 +28,77 @@
 
 @import url(typo.css);
 
-body{
-    margin: auto;
+
+@media (min-width:600px) {
+    ul.rangee li {
+        /* flex:0 1 calc(33.333333% - 10px); */
+        flex: 0 1 32%;
+    }
+
+    ul.rangee li:nth-of-type(2) {
+        margin: 0 10px;
+    }
+}
+
+
+
+
+body {
+    margin   : auto;
     max-width: 1000px;
 }
 
-fieldset fieldset{
+fieldset fieldset {
     border: none;
 }
 
-fieldset fieldset legend{
+fieldset fieldset legend {
     font-weight: bold;
 }
 
 ul.rangee {
-    list-style: none;
+    list-style  : none;
     padding-left: 0;
-    display: flex;
+    display     : flex;
 }
-ul.rangee li {
-    max-width: 200px;
+
+/* input[type="radio"]+label {
+    display: inline-block;
+    text-align: center;
 }
-ul.rangee li:not(:first-child){
+
+input[type="radio"]:hover+label {
+    cursor: pointer;
+    border: 2px solid #10DD69;
+}
+
+input[type="radio"]:checked+label {
+    border: 2px solid rgb(223, 11, 12);
+}
+
+ul.rangee li:not(:first-child) {
     margin-left: 20px;
+} */
+input[type=radio]+label {
+    display: inline-block;
+    text-align: center;
+    border: 2px solid transparent;
 }
 
-.produit{
+/*** Interactivité ***/
+[type=radio]:hover+label {
+    cursor: pointer;
+}
+
+[type=radio]:hover+label,
+[type=radio]:focus+label {
+    border: 2px solid #09c231;
+}
+
+[type=radio]:checked+label {
+    border: 2px solid #068221;
+}
+
+.produit {
     display: block;
-}
-
-[type="radio"]:hover + label {
-  cursor: pointer;
 }
