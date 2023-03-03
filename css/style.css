@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/**
+ * TABLE DES MATIERES
+ *
+ * Normalize (au lieu du reset)
+ * Utilitaires
+ * Grille 12 colonnes
+ * Styles de base
+ * Boutons radios accessibles
+ *** Form
+ *** Label des boutons radio
+ *** Interactivité
+ *** Erreurs
+ */
+
+/* Normalize (reset qui harmonise le rendu des éléments de formulaire)
+   ========================================================================== */
+@import url(normalize.css);
+
+/* Utilitaires (contient box-sising = border-box et autres utiles)
+   ========================================================================== */
+@import url(utilitaires.css);
+
+/* Grille 12 colonnes (jeu de classes : conteneur, rangee, cols_X_de_12)
+   ========================================================================== */
+/* @import url(grille.css); */
+
+@import url(typo.css);
+
+body{
+    margin: auto;
+    max-width: 1000px;
+}
+
+fieldset fieldset{
+    border: none;
+}
+
+fieldset fieldset legend{
+    font-weight: bold;
+}
+
+ul.rangee {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+}
+ul.rangee li {
+    max-width: 200px;
+}
+ul.rangee li:not(:first-child){
+    margin-left: 20px;
+}
+
+.produit{
+    display: block;
+}
+
+[type="radio"]:hover + label {
+  cursor: pointer;
+}
