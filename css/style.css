@@ -28,16 +28,45 @@
 
 @import url(typo.css);
 
-body {
-    margin: 0 10px 0;
-}
+
 
 @media (min-width:600px) {
 
-    body {
+    main,
+    header,
+    aside {
         margin   : auto;
         max-width: 1000px;
     }
+}
+
+@media (max-width:1020px) {
+
+    main,
+    header,
+    aside {
+        margin: 0 10px 0;
+    }
+}
+
+.multilabel {
+    display              : grid;
+    grid-template-columns: min-content;
+}
+
+.multilabel label {
+    width      : 9rem;
+    grid-column: 1;
+    text-align : right;
+}
+
+.multilabel input {
+    width      : 200px;
+    grid-column: 2;
+}
+
+aside{
+    text-align: justify;
 }
 
 ul.rangee li:nth-of-type(2) {
@@ -63,23 +92,6 @@ ul.rangee {
     display     : flex;
 }
 
-/* input[type="radio"]+label {
-    display: inline-block;
-    text-align: center;
-}
-
-input[type="radio"]:hover+label {
-    cursor: pointer;
-    border: 2px solid #10DD69;
-}
-
-input[type="radio"]:checked+label {
-    border: 2px solid rgb(223, 11, 12);
-}
-
-ul.rangee li:not(:first-child) {
-    margin-left: 20px;
-} */
 input[type=radio]+label {
     display   : inline-block;
     text-align: center;
@@ -102,4 +114,9 @@ input[type=radio]+label {
 
 .produit {
     display: block;
+}
+
+footer {
+    text-align      : center;
+    background-color: #DDDDDD;
 }
