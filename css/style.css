@@ -48,6 +48,16 @@
         margin: 0 10px 0;
     }
 }
+html{
+    background-color: #181a1b;
+}
+body{
+    color:var(--couleur-texte);
+}
+
+:visited{
+    color: var(--couleur-lien-visite);
+}
 
 .multilabel {
     display              : grid;
@@ -118,5 +128,5 @@ input[type=radio]+label {
 
 footer {
     text-align      : center;
-    background-color: #DDDDDD;
+    background-color: #424242;
 }
