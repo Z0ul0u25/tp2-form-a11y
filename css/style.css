@@ -61,7 +61,7 @@ body{
 
 .multilabel {
     display              : grid;
-    grid-template-columns: min-content;
+    grid-template-columns: min-content min-content auto;
 }
 
 .multilabel label {
@@ -73,6 +73,25 @@ body{
 .multilabel input {
     width      : 200px;
     grid-column: 2;
+}
+
+.multilabel span {
+    padding-left: 10px;
+    text-align: left;
+    grid-column: 3;
+}
+
+.msgErreur{
+    color: #FF1919;
+}
+
+.estErreur{
+    /* display: none; */
+}
+
+.msgErreur::before{
+    /*? Pourait être remplacé par un icon au lieu d'un émoji */
+    content: "❌";
 }
 
 aside{
