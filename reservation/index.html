@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-ca">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/style.css"/>
     <title>Réservation | Auberge du jacana africain</title>
 
 </head>
@@ -181,18 +181,18 @@
                     </legend>
                     <div>
                         <label for="adultes">Adultes (maximum 4):</label>
-                        <input type="number" id="adultes" name="adultes" min="1" max="4" required>
+                        <input type="number" id="adultes" name="adultes" min="1" max="4" required/>
                         <span class="msgErreur estErreur">Choisir une valeur entre 1 et 4 inclusivement</span>
                     </div>
                     <div>
                         <label for="enfants">Enfants (maximum 5):</label>
-                        <input type="number" id="enfants" name="enfants" min="0" max="5" required>
+                        <input type="number" id="enfants" name="enfants" min="0" max="5" required/>
                         <span class="msgErreur estErreur">Choisir une valeur entre 0 et 5 inclusivement</span>
                     </div>
 
                     <p>
-                        Notes: <br>
-                        1. la chambre familiale peut loger jusqu'à 6 personnes<br>
+                        Notes: <br/>
+                        1. la chambre familiale peut loger jusqu'à 6 personnes<br/>
                         2. si vous avez besoin de louer plusieurs chambres, <a href="#">contactez-nous directement</a>
                     </p>
                 </fieldset>
@@ -213,7 +213,7 @@
                             <input type="radio" name="chambre" id="litDouble1" value="litDouble1"
                                 class="screen-reader-only" required>
                             <label for="litDouble1">
-                                <img src="../images/types-de-chambre/1-lit-double.webp" alt="">
+                                <img src="../images/types-de-chambre/1-lit-double.webp" alt="Lit double">
                                 <span class="produit">Lit double 1</span>
                             </label>
                         </li>
@@ -221,7 +221,7 @@
                             <input type="radio" name="chambre" id="litDouble2" value="litDouble2"
                                 class="screen-reader-only">
                             <label for="litDouble2">
-                                <img src="../images/types-de-chambre/2-lits-double.jpg" alt="">
+                                <img src="../images/types-de-chambre/2-lits-double.jpg" alt="Lit double">
                                 <span class="produit">Lit double 2</span>
                             </label>
                         </li>
@@ -229,7 +229,7 @@
                             <input type="radio" name="chambre" id="chambreFamiliale" value="chambreFamiliale"
                                 class="screen-reader-only">
                             <label for="chambreFamiliale">
-                                <img src="../images/types-de-chambre/chambre-familiale.jpg" alt="">
+                                <img src="../images/types-de-chambre/chambre-familiale.jpg" alt="Chambre Familiale">
                                 <span class="produit">Familiale</span>
                             </label>
                         </li>
@@ -248,23 +248,23 @@
             <div class="form-section">
                 <h2>4. Identification</h2>
                 <div class="multilabel">
-                    <label>Prénom :</label>
+                    <label for="prenom">Prénom :</label>
                     <input type="text" id="prenom" name="prenom" pattern="[a-zA-ZÀ-ÿ \-]+" required>
                     <span class="msgErreur estErreur">Prenom non valide</span>
                     <!-- </div> -->
                     <!-- <div> -->
-                    <label>Nom :</label>
+                    <label for="nom">Nom :</label>
                     <input type="text" id="nom" name="nom" pattern="[a-zA-ZÀ-ÿ \-]+" required>
                     <span class="msgErreur estErreur">Nom non valide</span>
                     <!-- </div> -->
                     <!-- <div> -->
-                    <label>Courriel :</label>
+                    <label for="email">Courriel :</label>
                     <input type="email" id="email" name="email"
                         patern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.([a-zA-Z0-9-]){2,}$" required>
                     <span class="msgErreur estErreur">Courriel non valide</span>
                     <!-- </div> -->
                     <!-- <div> -->
-                    <label>Téléphone :</label>
+                    <label for telephone>Téléphone :</label>
                     <input type="tel" id="telephone" name="telephone" pattern="^\d{3} \d{3}-\d{4}$" required>
                     <span class="msgErreur estErreur">Téléphone non valide</span>
                 </div>
