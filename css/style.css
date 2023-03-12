@@ -202,6 +202,7 @@ input[type=radio]+label {
 }
 
 footer {
+    margin-top: 20px;
     text-align      : center;
     background-color: #3e3e3e;
 }
